@@ -8,4 +8,11 @@
 <p> we have <%= item.title %> items ! </p>
 
 
+<p>
+<%= link_to 'Edit', edit_entry_path(item) %>
+<%= link_to 'Delete', item_path(item), method: :delete %>
+</p>
+<br>
+
 <% end %>
+<%= link_to 'New item', new_item_path %></p>
