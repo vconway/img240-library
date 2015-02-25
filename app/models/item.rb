@@ -1,10 +1,10 @@
 class Item < ActiveRecord::Base
-belongs_to :ItemType
+belongs_to :item_type
 
 def completed?
-if completed_on != nil
-true
-else
-false
+ completed_on != nil
+end
+
+
 
 end
